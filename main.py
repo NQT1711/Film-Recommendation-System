@@ -5,7 +5,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.decomposition import TruncatedSVD
 from sklearn.metrics.pairwise import cosine_similarity
 
-movie = pd.read_csv("movie.csv")[:10000]
+movie = pd.read_csv("movie.csv")[:5000]
 
 C = movie['Score'].mean()
 m =  movie['Review count'].quantile(0.9)
